@@ -5,13 +5,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class LocationDto {
+public class GetAllDangerByUserLocationDto {
+    private int id;
+    private String dangerName;
     private double latitude;
     private double longitude;
-
-    public LocationDto(double latitude, double longitude) {
-        this.latitude = latitude;
-        this.longitude = longitude;
-    }
 
 }
