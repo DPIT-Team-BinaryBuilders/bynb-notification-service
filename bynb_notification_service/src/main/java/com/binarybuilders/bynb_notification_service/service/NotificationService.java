@@ -14,8 +14,8 @@ public class NotificationService {
     @Autowired
     private RestTemplateService restTemplateService;
 
-    public GetAllDangerByUserLocationDto createNotification(LocationDto userLocation) {
-        return restTemplateService.getDanger(userLocation);
+    public boolean createNotification(LocationDto userLocation) {
+        return restTemplateService.getDanger(userLocation) != null;
     }
 
 }

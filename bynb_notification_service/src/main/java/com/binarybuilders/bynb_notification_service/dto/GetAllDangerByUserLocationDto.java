@@ -8,7 +8,7 @@ import lombok.Setter;
 public class GetAllDangerByUserLocationDto {
     private int id;
     private String dangerName;
-    private double latitude;
-    private double longitude;
+    private double lat;
+    private double lng;
 
 }

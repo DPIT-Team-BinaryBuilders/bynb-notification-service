@@ -15,7 +15,7 @@ public class NotificationController {
     NotificationService notificationService;
 
     @GetMapping("/new")
-    public GetAllDangerByUserLocationDto newNotification(@RequestBody LocationDto userLocation) {
+    public Boolean newNotification(@RequestBody LocationDto userLocation) {
         return notificationService.createNotification(userLocation);
     }
 }

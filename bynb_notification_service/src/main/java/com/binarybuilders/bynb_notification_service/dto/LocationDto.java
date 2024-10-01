@@ -6,12 +6,12 @@ import lombok.Setter;
 @Getter
 @Setter
 public class LocationDto {
-    private double latitude;
-    private double longitude;
+    private double lat;
+    private double lng;
 
     public LocationDto(double latitude, double longitude) {
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.lat = latitude;
+        this.lng = longitude;
     }
 
 }
